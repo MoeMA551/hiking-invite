@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import RSVPCard from "./components/RSVPCard";
 import { useRef } from "react";
+import ItineraryCard from "./components/ItenaryCard";
 
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
             </SwiperSlide>
             <SwiperSlide>
               <DestinationCard onRsvp={goRsvp}/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <ItineraryCard onRsvp={goRsvp}/>
             </SwiperSlide>
             <SwiperSlide>
               <RSVPCard />

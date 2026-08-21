@@ -9,12 +9,12 @@ export default function RSVPCard({onRsvp})  {
 
     return(
         <DefaultCard onRsvp= {onRsvp} RsvpLabel="Submit">
-            <div className="flex h-full w-full flex-col items-center gap-10 sm:gap-20 px-6 pb-16 text-center justify-center">
+            <div className="flex h-full w-full flex-col items-center gap-10 sm:gap-20 px-6 pb-16 text-center">
                 <h2 className="text-3xl sm:text-4xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] mt-3 sm:mt-10">
                 Are you In?
                 </h2>
 
-                <div className="flex w-full max-w-xs sm:max-w-lg flex-col gap-10 items-center justify-center">
+                <div className="flex w-full max-w-xs sm:max-w-lg flex-col gap-10 items-center justify-center mt-5 sm:mt-10">
                     <input
                         type="text"
                         value={name}

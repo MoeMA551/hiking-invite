@@ -14,7 +14,7 @@ export default function GreetingCard({onRsvp}) {
         <p className="text-xl font-medium text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
           {greeting.line2}
         </p>
-        <p className="mt-2 text-2xl sm:text-3xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
+        <p className="mt-2 mx-5 text-2xl sm:text-3xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
           {greeting.line3}
         </p>
         <p className="mt-4 text-lg font-medium text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
