@@ -2,7 +2,8 @@ export const tripData = {
   title: "Mountain Hiking Invitation",
   tagline: "Chilling at Onsen After Hiking",
   hostedBy: "",
-  dateLabel: "Mon, October 3, 2026",
+  dateLabel: "Mon, August 24, 20226",
+  tripDate: "2026-08-24",
   meetTime: "05:00 AM",
   greeting: {
   line1: "Hey, it's Moe!",
