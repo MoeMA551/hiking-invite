@@ -20,7 +20,7 @@ export default function ItineraryCard({ onRsvp }) {
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-bark-300 text-xs font-bold text-forest-900">
                     {i + 1}
                 </span>
-                <span className="text-lg sm:text-lg font-medium text-cream-50">{step}</span>
+                <span className="text-xs sm:text-lg font-medium text-cream-50">{step}</span>
                 </div>
             ))}
             </div>
