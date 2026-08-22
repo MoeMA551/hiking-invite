@@ -15,13 +15,13 @@ export default function DateBadge({ isoDate }) {
   ];
 
   return (
-    <div className="mt-4 flex divide-x divide-cream-50/20 overflow-hidden rounded-2xl border border-cream-50/50 bg-forest-900/40 backdrop-blur-sm">
+    <div className="mt-2 flex divide-x divide-cream-50/20 overflow-hidden rounded-2xl border border-cream-50/50 bg-forest-900/40 backdrop-blur-sm">
       {segments.map((seg) => (
-        <div key={seg.label} className="flex flex-1 flex-col items-center gap-1 px-4 py-4 sm:px-5 sm:py-5">
+        <div key={seg.label} className="flex flex-1 flex-col items-center gap-1 px-1 py-6 sm:px-3 sm:py-5">
           <span className="text-sm sm:text-lg font-semibold uppercase tracking-wide text-cream-100/60">
             {seg.label}
           </span>
-          <span className="text-2xl sm:text-3xl font-bold text-cream-50">{seg.value}</span>
+          <span className="text-xl sm:text-2xl font-bold text-cream-50">{seg.value}</span>
         </div>
       ))}
     </div>
