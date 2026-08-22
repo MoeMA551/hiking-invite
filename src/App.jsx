@@ -6,7 +6,7 @@ import DestinationCard from "./components/DestinationCard";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
-import RSVPCard from "./components/RSVPCard";
+import RSVPCard from "./components/RSVPCard1";
 import { useRef } from "react";
 import ItineraryCard from "./components/ItenaryCard";
 

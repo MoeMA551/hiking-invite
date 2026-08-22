@@ -4,4 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/hiking-invite/',
+  server: {
+    proxy: {
+      '/api': 'http://localhost:3001',
+    },
+  },
 })

@@ -1,21 +1,15 @@
-const STORAGE_KEY = "hiking-invite-rsvp-list";
-
-export function getGuestList() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch {
-    return [];
-  }
+export async function getGuestList() {
+  const res = await fetch("/api/guests");
+  if (!res.ok) throw new Error("Could not load guest list.");
+  return res.json();
 }
 
-export function addGuestToList(entry) {
-  const list = getGuestList();
-  const next = [...list, { ...entry, id: crypto.randomUUID(), submittedAt: new Date().toISOString() }];
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-  } catch {
-    // storage full or unavailable — the email still went out, so this is non-fatal
-  }
-  return next;
+export async function addGuestToList(entry) {
+  const res = await fetch("/api/guests", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(entry),
+  });
+  if (!res.ok) throw new Error("Could not save RSVP.");
+  return res.json();
 }
