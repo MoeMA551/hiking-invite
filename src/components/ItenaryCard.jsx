@@ -6,21 +6,21 @@ export default function ItineraryCard({ onRsvp }) {
 
   return (
     <DefaultCard onRsvp={onRsvp}>
-      <div className="flex h-full w-full flex-col items-center overflow-y-auto px-6 pt-5 sm:pt-12 pb-32 text-center">
-        <h2 className="text-2xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-3xl">
+      <div className="flex h-full w-full flex-col items-center overflow-y-auto px-6 pt-5 sm:pt-5 pb-32 text-center">
+        <h2 className="text-xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-3xl">
           Itinerary
         </h2>
 
-       <div className="mt-6 flex w-xs sm:w-lg flex-col gap-3 sm:gap-7">
+       <div className="mt-3 sm:mt-6 flex w-xs sm:w-md flex-col gap-2 sm:gap-3 px-5">
             {itinerary.map((step, i) => (
                 <div
                 key={step}
-                className="flex shrink-0 items-center gap-3 rounded-2xl bg-white/15 px-4 py-3 sm:py-7 text-left"
+                className="flex shrink-0 items-center gap-3 rounded-2xl bg-white/15 px-4 py-3 sm:py-4 text-left"
                 >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-bark-300 text-sm font-bold text-forest-900">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-bark-300 text-xs font-bold text-forest-900">
                     {i + 1}
                 </span>
-                <span className="text-sm sm:text-xl font-medium text-cream-50">{step}</span>
+                <span className="text-lg sm:text-lg font-medium text-cream-50">{step}</span>
                 </div>
             ))}
             </div>

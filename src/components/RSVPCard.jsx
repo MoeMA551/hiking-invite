@@ -75,27 +75,27 @@ export default function RSVPCard({onRsvp})  {
                 Are you In?
                 </h2>
 
-                <div className="flex w-full max-w-xs sm:max-w-lg flex-col gap-5 items-center justify-center mt-3 sm:mt-5 mx-3 px-5 sm:px-10">
+                <div className="flex w-full max-w-xs sm:max-w-lg flex-col gap-5 items-center justify-center mt-3 mx-3 px-5 sm:px-10 sm:pb-2">
                     <input
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Your name"
-                        className="w-full text-md sm:text-3xl rounded-xl bg-white/15 px-4 py-3 text-cream-50 placeholder-cream-100/60 outline-none transition focus:bg-white/25"
+                        className="w-full text-md sm:text-2xl rounded-xl bg-white/15 px-4 py-3 text-cream-50 placeholder-cream-100/60 outline-none transition focus:bg-white/25"
                     />
                     <input
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Your email"
-                        className="w-full text-md sm:text-3xl rounded-xl bg-white/15 px-4 py-3 text-cream-50 placeholder-cream-100/60 outline-none transition focus:bg-white/25"
+                        className="w-full text-md sm:text-2xl rounded-xl bg-white/15 px-4 py-3 text-cream-50 placeholder-cream-100/60 outline-none transition focus:bg-white/25"
                     />
                     <input
                         type="text"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         placeholder="Message For Me"
-                        className="w-full text-md sm:text-3xl rounded-xl bg-white/15 px-4 py-3 text-cream-50 placeholder-cream-100/60 outline-none transition focus:bg-white/25"
+                        className="w-full text-md sm:text-2xl rounded-xl bg-white/15 px-4 py-3 text-cream-50 placeholder-cream-100/60 outline-none transition focus:bg-white/25"
                     />
                 </div>
             </div>

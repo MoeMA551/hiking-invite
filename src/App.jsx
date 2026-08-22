@@ -13,7 +13,7 @@ import ItineraryCard from "./components/ItenaryCard";
 
 function App() {
   const swiperRef = useRef(null);
-  const TOTAL_SLIDES = 3; // however many <SwiperSlide> you actually have
+  const TOTAL_SLIDES = 4; // however many <SwiperSlide> you actually have
   const RSVP_INDEX = TOTAL_SLIDES - 1; // always "the last one", stays correct if you add/remove slides
   const goRsvp = () => swiperRef.current?.slideTo(RSVP_INDEX);
 
