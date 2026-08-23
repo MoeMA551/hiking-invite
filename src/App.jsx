@@ -60,7 +60,7 @@ function App() {
                 <ItineraryCard onRsvp={goRsvp}/>
               </SwiperSlide>
               <SwiperSlide>
-                <BudgetCard onDone={goRsvp} />
+                <BudgetCard onRsvp={goRsvp} />
               </SwiperSlide>
               <SwiperSlide>
                 <RSVPCard onDone={handleRsvpDone} />
