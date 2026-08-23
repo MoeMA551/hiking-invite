@@ -3,7 +3,7 @@ import { useState } from "react";
 import { addGuestToList, getGuestList } from "../utils/guestList";
 import { sendRsvpEmail } from "../utils/email";
 
-export default function RSVPCard({onRsvp})  {
+export default function RSVPBackup({onRsvp})  {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");

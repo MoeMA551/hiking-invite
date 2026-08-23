@@ -102,7 +102,7 @@ export default function RsvpCard() {
           Are you In?
         </h2>
 
-        <div className="flex w-full max-w-md flex-col gap-3 sm:max-w-lg">
+        <div className="flex w-full max-w-md flex-col gap-3 sm:max-w-lg px-7">
           <input
             type="text"
             value={name}
@@ -121,7 +121,7 @@ export default function RsvpCard() {
             type="text"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="See you! (optional message)"
+            placeholder="Write a message!"
             className="w-full rounded-xl bg-white/15 px-4 py-3 text-cream-50 placeholder-cream-100/60 outline-none transition focus:bg-white/25"
           />
         </div>

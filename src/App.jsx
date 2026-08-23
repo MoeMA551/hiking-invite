@@ -6,7 +6,7 @@ import DestinationCard from "./components/DestinationCard";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
-import RSVPCard from "./components/RSVPCard1";
+import RSVPCard from "./components/RSVPCard";
 import { useRef } from "react";
 import ItineraryCard from "./components/ItenaryCard";
 
@@ -31,7 +31,6 @@ function App() {
           spaceBetween={100}
           slidesPerView={1}
           onSwiper={(s) => (swiperRef.current = s)}
-          onSlideChange={(s) => setActiveIndex(s.activeIndex)}
           speed={500}
         >
             <SwiperSlide>
