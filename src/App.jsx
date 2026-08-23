@@ -10,11 +10,12 @@ import RSVPCard from "./components/RSVPCard";
 import ParticipantsView from "./components/ParticipantsView";
 import { useRef, useState } from "react";
 import ItineraryCard from "./components/ItenaryCard";
+import BudgetCard from "./components/BudgetCard";
 
 
 function App() {
   const swiperRef = useRef(null);
-  const TOTAL_SLIDES = 4;
+  const TOTAL_SLIDES = 5;
   const RSVP_INDEX = TOTAL_SLIDES - 1;
   const goRsvp = () => swiperRef.current?.slideTo(RSVP_INDEX);
 
@@ -57,6 +58,9 @@ function App() {
               </SwiperSlide>
               <SwiperSlide>
                 <ItineraryCard onRsvp={goRsvp}/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <BudgetCard onDone={goRsvp} />
               </SwiperSlide>
               <SwiperSlide>
                 <RSVPCard onDone={handleRsvpDone} />

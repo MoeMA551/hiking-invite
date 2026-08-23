@@ -6,12 +6,12 @@ export default function ItineraryCard({ onRsvp }) {
 
   return (
     <DefaultCard onRsvp={onRsvp}>
-      <div className="flex h-full w-full flex-col items-center overflow-y-auto px-6 pt-5 sm:pt-5 pb-32 text-center">
+      <div className="flex h-full w-full flex-col items-center overflow-y-auto px-6 sm:pt-5 pb-32 text-center">
         <h2 className="text-xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-3xl">
           Itinerary
         </h2>
 
-       <div className="mt-3 sm:mt-6 flex w-xs sm:w-md flex-col gap-2 sm:gap-3 px-5">
+       <div className="mt-1 sm:mt-6 flex w-xs sm:w-md flex-col gap-2 sm:gap-3 px-5">
             {itinerary.map((step, i) => (
                 <div
                 key={step}

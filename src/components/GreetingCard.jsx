@@ -8,7 +8,7 @@ export default function GreetingCard({onRsvp}) {
   return (
     <DefaultCard onRsvp={onRsvp}>
       <div className="relative h-full w-full flex flex-col items-center justify-center gap-3 sm:gap-4 px-6 pb-16 text-center">
-        <p className="text-3xl sm:text-4xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
+        <p className="text-2xl sm:text-4xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
           {greeting.line1}
         </p>
         <p className="text-xl font-medium text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">

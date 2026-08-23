@@ -14,7 +14,15 @@ export default function RSVPCard({ onDone }) {
     setStatus("sending");
 
     const rsvp = { name: name.trim(), email: email.trim(), message: message.trim() };
-    const updated = addGuestToList(rsvp);
+
+    let updated = [];
+    let saveOk = true;
+    try {
+      updated = await addGuestToList(rsvp);
+    } catch (err) {
+      console.error("Could not save RSVP to the sheet:", err);
+      saveOk = false;
+    }
 
     let emailOk = true;
     try {
@@ -24,7 +32,7 @@ export default function RSVPCard({ onDone }) {
       emailOk = false;
     }
 
-    onDone(updated, emailOk);
+    onDone(updated, emailOk, saveOk);
   };
 
   return (
@@ -38,7 +46,7 @@ export default function RSVPCard({ onDone }) {
           Are you In?
         </h2>
 
-        <div className="flex w-full max-w-md flex-col gap-3 sm:max-w-lg px-7">
+        <div className="flex w-full max-w-md flex-col gap-3 sm:max-w-lg">
           <input
             type="text"
             value={name}
