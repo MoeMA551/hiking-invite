@@ -24,7 +24,7 @@ export default function BudgetCard({ onRsvp }) {
           {BUDGET_ITEMS.map((item) => (
             <div
               key={item.label}
-              className="flex items-center justify-between gap-3 rounded-xl bg-white/15 px-4 text-left"
+              className="flex items-center justify-between gap-3 rounded-xl bg-white/15 px-4 sm:py-3 text-left"
             >
               <span className="text-md font-medium text-cream-50 sm:text-base">{item.label}</span>
               <span className="text-md font-semibold text-cream-50 sm:text-base">

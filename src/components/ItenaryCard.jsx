@@ -6,8 +6,8 @@ export default function ItineraryCard({ onRsvp }) {
 
   return (
     <DefaultCard onRsvp={onRsvp}>
-      <div className="flex h-full w-full flex-col items-center overflow-y-auto px-6 sm:pt-5 pb-32 text-center">
-        <h2 className="text-xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-3xl">
+      <div className="flex h-full w-full flex-col items-center overflow-y-auto text-center">
+        <h2 className="text-xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-2xl">
           Itinerary
         </h2>
 
@@ -20,7 +20,7 @@ export default function ItineraryCard({ onRsvp }) {
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-bark-300 text-xs font-bold text-forest-900">
                     {i + 1}
                 </span>
-                <span className="text-xs sm:text-lg font-medium text-cream-50">{step}</span>
+                <span className="text-xs sm:text-md font-medium text-cream-50">{step}</span>
                 </div>
             ))}
             </div>

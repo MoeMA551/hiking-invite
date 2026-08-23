@@ -41,12 +41,12 @@ export default function RSVPCard({ onDone }) {
       rsvpLabel={status === "sending" ? "Submitting…" : "Submit"}
       rsvpDisabled={status === "sending"}
     >
-      <div className="flex h-full w-full flex-col items-center justify-center gap-5 px-6 pb-16 text-center">
+      <div className="flex h-full w-full flex-col items-center justify-center gap-5 sm:gap-10 px-6 pb-16 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-cream-50 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
           Are you In?
         </h2>
 
-        <div className="flex w-full max-w-md flex-col gap-3 sm:max-w-lg">
+        <div className="flex w-full max-w-md flex-col gap-3 sm:gap-7 sm:max-w-lg">
           <input
             type="text"
             value={name}
